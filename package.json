@@ -1,7 +1,7 @@
 {
-  "name": "cli-disney-trivia-game",
-  "version": "1.0.0",
-  "description": "",
+  "name": "cli-disney-trivia",
+  "version": "0.0.2",
+  "description": "A CLI Disney trivia game",
   "main": "index.js",
   "type": "module",
   "scripts": {

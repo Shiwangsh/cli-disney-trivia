@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import * as c from "@clack/prompts";
 import color from "picocolors";
 import chalkAnimation from "chalk-animation";
@@ -90,7 +92,7 @@ async function main() {
   console.clear();
   await welcome();
   const question1 = new Question(
-    "1) What sort of animal is Walt Disney's Dumbo?? 🐘🪽",
+    "1) What sort of animal is Walt Disney's Dumbo? 🐘🪽",
     ["Deer", "Rabbit", "Elephant", "Donkey"],
     2,
     "s",
@@ -116,7 +118,7 @@ async function main() {
   );
 
   const question5 = new Question(
-    "5)  What was the first Pixar Movie 🎥",
+    "5)  What was the first Pixar Movie? 🎥",
     ["Toy Story", "The Incredibles", "Up", "Monsters, Inc"],
     0
   );
@@ -200,7 +202,7 @@ async function main() {
 
   if (totalCorrect == 10) {
     s.start("Generating secret message");
-    await sleep();
+    await sleep(2000);
     s.stop();
     const secretMessage = chalkAnimation.glitch(
       `Congrats! ${playerName} you got all 10 questions right! Now go outside and touch grass! 🤓🤓`
