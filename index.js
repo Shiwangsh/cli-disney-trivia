@@ -130,7 +130,7 @@ async function main() {
   );
 
   const question7 = new Question(
-    "7) What is the name of the teapot character in? 🫖",
+    "7) What is the name of the teapot character in Beauty and the Beast? 🫖",
     ["Mrs. Potts", "Mr. Pots", "Mrs. TeaPot", "Mrs. Potter"],
     0
   );
@@ -209,6 +209,13 @@ async function main() {
     );
     await sleep(6000);
     secretMessage.stop();
+    c.outro(
+      `${color.bgMagenta(
+        color.black(
+          `Checkout https://github.com/Shiwangsh for more cool projects 😉`
+        )
+      )}`
+    );
   } else {
     s.start();
     await sleep();
